@@ -13,10 +13,12 @@ async def upload(container: str = Form(...), file: UploadFile = File(...)):
 def get_file(container: str, filename: str):
     return get_blob(filename, container)
 
-@blob_routes.get("/download/{container}/{filename}")
-def download_file(container: str, filename: str):
-    return download_blob(filename, container)
 
-@blob_routes.delete("/delete")
-def delete_file(container: str = Form(...), filename: str = Form(...)):
-    return delete_blob(filename, container)
+
+# @blob_routes.get("/download/{container}/{filename}")
+# def download_file(container: str, filename: str):
+#     return download_blob(filename, container)
+
+# @blob_routes.delete("/delete")
+# def delete_file(container: str = Form(...), filename: str = Form(...)):
+#     return delete_blob(filename, container)
