@@ -1,10 +1,13 @@
 from fastapi import APIRouter, Form, UploadFile, File
 from azure_blob_functions.blob import get_blob, upload_blob, download_blob, delete_blob
+import cv2
+import numpy as np
+from PIL import Image
 
 blob_routes = APIRouter()
 
 @blob_routes.post("/upload")
-async def upload(container: str = Form(...), file: UploadFile = File(...)):
+async def upload(container: str = Form(...), file1: UploadFile = File(...)):
     data = await file.read()
     filename = file.filename
     return upload_blob(filename, container, data)

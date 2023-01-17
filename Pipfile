@@ -9,8 +9,11 @@ uvicorn = "*"
 azure-storage-blob = "*"
 python-dotenv = "*"
 python-multipart = "*"
+opencv-python = "*"
+numpy = "*"
+pillow = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.8"
