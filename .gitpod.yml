@@ -3,8 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: sudo apt-get install ffmpeg libsm6 libxext6  -y
-    command: pipenv shell && pipenv install && uvicorn main:app --reload --env-file=.env
+  - command: pipenv shell && pipenv install && uvicorn main:app --reload --env-file=.env
 
 # apt-get install ffmpeg libsm6 libxext6  -y
 # apt-get install python3-opencv
