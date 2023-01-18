@@ -11,6 +11,7 @@ python-dotenv = "*"
 python-multipart = "*"
 numpy = "*"
 pillow = "*"
+opencv-python-headless = "*"
 
 [dev-packages]
 

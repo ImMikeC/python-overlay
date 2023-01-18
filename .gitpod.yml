@@ -7,4 +7,6 @@ tasks:
     command: pipenv shell && pipenv install && uvicorn main:app --reload --env-file=.env
 
 # apt-get install ffmpeg libsm6 libxext6  -y
+# apt-get install python3-opencv
 # pipenv shell && pipenv install && uvicorn main:app --reload --env-file=.env
+# pipenv install opencv-python-headless
