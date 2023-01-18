@@ -9,7 +9,6 @@ uvicorn = "*"
 azure-storage-blob = "*"
 python-dotenv = "*"
 python-multipart = "*"
-opencv-python = "*"
 numpy = "*"
 pillow = "*"
 
