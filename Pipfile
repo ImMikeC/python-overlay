@@ -12,6 +12,7 @@ python-multipart = "*"
 numpy = "*"
 pillow = "*"
 opencv-python-headless = "*"
+openapi = "*"
 
 [dev-packages]
 
