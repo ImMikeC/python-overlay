@@ -13,6 +13,8 @@ numpy = "*"
 pillow = "*"
 opencv-python-headless = "*"
 openapi = "*"
+azure-identity = "*"
+azure-cognitiveservices-vision-computervision = "*"
 
 [dev-packages]
 
