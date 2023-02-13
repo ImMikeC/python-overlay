@@ -94,6 +94,9 @@ async def image_ocr(file: str, ocrOutput: str):
             for line in text_result.lines:            
                 print(line.text, file=open(ocrOutput + '.txt', "a"))
 
+
+
+
     
 
             
