@@ -73,8 +73,8 @@ async def overlay_images(container: str, file1: str, file2: str, width: int, hei
 
 @blob_routes.post("/ocr")
 async def image_ocr(file: str, ocrOutput: str):
-    subscription_key = '4715df58f9ad49ae8218dd76edc6158b'
-    endpoint = 'https://cs-hs-techlabs-dev-001.cognitiveservices.azure.com/'
+    subscription_key = ''
+    endpoint = ''
     computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
     read_image_url = 'https://stgehspocdev001.blob.core.windows.net/files-demo/' + file
@@ -94,7 +94,8 @@ async def image_ocr(file: str, ocrOutput: str):
             for line in text_result.lines:            
                 print(line.text, file=open(ocrOutput + '.txt', "a"))
 
-
+#Renovar connection string cada ciertos dias
+#
 
 
     
